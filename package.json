@@ -1,0 +1,55 @@
+{
+  "name": "hookr",
+  "version": "0.1.0",
+  "description": "A webhook management implementation",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "./node_modules/.bin/gulp",
+    "start:dev:express": "DEBUG=express:* ./node_modules/.bin/gulp",
+    "start": "./node_modules/.bin/gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/as3io/hookr-server.git"
+  },
+  "keywords": [
+    "hook",
+    "webhook"
+  ],
+  "author": "solocommand",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/as3io/hookr-server/issues"
+  },
+  "homepage": "https://github.com/as3io/hookr-server#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.1",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.1",
+    "express-session": "^1.15.6",
+    "helmet": "^3.8.2",
+    "http-errors": "^1.6.2",
+    "jsonwebtoken": "^8.1.0",
+    "mongodb": "^2.2.33",
+    "passport": "^0.4.0",
+    "passport-github2": "^0.1.11",
+    "passport-http": "^0.3.0",
+    "passport-jwt": "^3.0.1",
+    "qs": "^6.5.1",
+    "raven": "^2.2.1",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb-base": "^12.0.1",
+    "eslint-plugin-import": "^2.7.0",
+    "gulp": "^3.9.1"
+  }
+}
